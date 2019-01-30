@@ -321,10 +321,35 @@ ul li {
   position: relative;
 }
 
+ul.rooms {
+  margin-bottom: 30px;
+}
+
+ul.rooms li {
+  font-size: 1em;
+  display: inline-block;
+  width: 10%;
+  padding: 3px 2px 2px;
+  border-radius: 2px;
+  margin: 0 3px 3px 3px;
+  color: white;
+    text-align: center;
+}
+
+ul.rooms li.empty {
+  background-color: #5fcf80;
+}
+ul.rooms li.full {
+  background-color: #ed5a5a;
+}
+
+ul.bulleted {
+  margin-bottom: 20px;
+}
+
 ul.bulleted li {
   padding-left: 40px;
 }
-
 ul.bulleted li:before {
   position: absolute;
   top: 0;
@@ -333,23 +358,20 @@ ul.bulleted li:before {
   font-size: .5em;
   padding: 3px 2px 2px;
   border-radius: 2px;
-  text-align: center;
+  text-align:center;
   width: 25px;
 }
 
 ul.bulleted .in {
   color: #5A6772;
 }
-
 ul.bulleted .in:before {
   content: "IN";
   background-color: #5fcf80;
 }
-
 ul.bulleted .out {
   color: #A7B4BF;
 }
-
 ul.bulleted .out:before {
   content: "OUT";
   background-color: #ed5a5a;
